@@ -1,4 +1,3 @@
-#Script Installation Docker + VaultWarden
 apt update
 apt -y install sudo
 sudo apt-get update
@@ -17,12 +16,6 @@ echo \
 
 
 sudo apt-get update
-
-
-#Si erreur au niveau de la clé GPG
-#sudo chmod a+r /etc/apt/keyrings/docker.gpg
-#sudo apt-get update
-
 
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
