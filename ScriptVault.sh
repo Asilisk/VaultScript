@@ -2,11 +2,10 @@
 apt update
 apt -y install sudo
 sudo apt-get update
-sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
+sudo apt-get install ca-certificates
+sudo apt-get install curl 
+sudo apt-get install gnupg
+sudo apt-get install lsb-release
 
 
 sudo mkdir -m 0755 -p /etc/apt/keyrings
