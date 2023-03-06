@@ -1,10 +1,10 @@
 apt update
 apt -y install sudo
-sudo apt-get update
-sudo apt-get install ca-certificates
-sudo apt-get install curl 
-sudo apt-get install gnupg
-sudo apt-get install lsb-release
+sudo apt -y update
+sudo apt -y install ca-certificates
+sudo apt -y install curl 
+sudo apt -y install gnupg
+sudo apt -y install lsb-release
 
 
 sudo mkdir -m 0755 -p /etc/apt/keyrings
@@ -15,10 +15,10 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 
-sudo apt-get update
+sudo apt -y update
 
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 docker run -d \
 --restart unless-stopped \
